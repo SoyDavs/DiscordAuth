@@ -1,0 +1,19 @@
+name: DiscordAuth
+version: 1.0.0
+api: 5.0.0
+main: SoyDavs\DiscordAuth\Main
+author: SoyDavs
+commands:
+  discord:
+    description: Start Discord verification
+    usage: "/discord <discord-id>"
+    permission: discordauth.command.discord
+  register:
+    description: Complete verification with code
+    usage: "/register <code>"
+    permission: discordauth.command.register
+permissions:
+  discordauth.command.discord:
+    default: true
+  discordauth.command.register:
+    default: true

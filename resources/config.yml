@@ -1,0 +1,39 @@
+# DiscordAuth Configuration
+webhook-url: "YOUR_WEBHOOK_URL_HERE"
+# Use {player} for player name and {discord_id} for Discord ID
+role-command: "/give-role {discord_id} 960984138972803182" #where 960984138972803182 is the role id
+
+# Title and message for the verification embed sent to Discord
+verification-title: "Minecraft Account Verification"
+verification-message: "Hello, **{player_name}** has requested to verify their Minecraft account. Use the following code to verify: **{verification_code}**"
+
+# Message format for the Discord verification webhook, where {discord_id} is the Discord ID,
+# and {verification_code} is the code the player needs to use for verification.
+discord-verification-message: "Verification code for <@{discord_id}>: **{verification_code}**"
+
+# Message to be sent to the player after sending the verification request
+verification-sent: "§aVerification request sent! Check the Discord channel for the verification code."
+
+# Messages displayed when different commands or actions are performed
+only-in-game: "§cThis command can only be used in-game!"
+
+# Usage message for the /discord command
+discord-usage: "§cUsage: /discord <discord-id>"
+
+# Error message for invalid Discord ID format
+invalid-discord-id: "§cInvalid Discord ID! Please provide a valid Discord ID."
+
+# Message shown when a player tries to register but is already registered
+already-registered: "§cYou are already registered with a Discord account!"
+
+# Usage message for the /register command
+register-usage: "§cUsage: /register <code>"
+
+# Message when the code provided by the user is invalid
+invalid-code: "§cInvalid or expired code!"
+
+# Message when the code provided doesn't match the player's account
+code-not-for-player: "§cThis code wasn't generated for your account!"
+
+# Success message shown when registration is successful
+registration-success: "§aSuccessfully verified your Discord account!"
